@@ -1,0 +1,370 @@
+:root {
+    --bg-color: #0D0D0D;
+    --abt-bg-color: #6CB3B5;
+    --text-color: #FFFFFF;
+    --stroke-color: #656262;
+    --font1-circular: Circular Std Medium;
+    --font2-monument: monument;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stroke{
+    -webkit-text-stroke-color: var(--stroke-color);
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--abt-bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 3rem 4rem 1rem 4rem;
+    font-family: var(--font1-circular);
+    z-index: 99;
+}
+
+nav #links {
+    display: flex;
+    gap: 5rem;
+}
+
+nav #links a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+nav h3 {
+    font-weight: 300;
+    font-size: 14.5px;
+    margin-bottom: 3px;
+}
+
+nav #links a:hover {
+    color: #d6f4f5;
+}
+
+@media(max-width: 768px) {
+    nav {
+        padding: 2.7rem 1.3rem 1rem 1.3rem;
+    }
+
+    nav #links {
+        gap: 2rem;
+    }
+
+    nav h3 {
+        font-weight: 300;
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+}
+
+
+/* code for about-home-pg */
+#abt-home{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+#abt-home #headings{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 5rem; 
+}
+
+#abt-home #headings .row{
+    display: flex;
+}
+
+#abt-home #headings #row1{
+    z-index: 5;
+}
+#abt-home #headings #row2{
+    z-index: 15;
+    transform: translateX(-15%);
+}
+
+#abt-home #headings h1{
+    font-size: 7.2vw;
+    font-family: var(--font2-monument);
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+#abt-home #headings .stroke{
+    -webkit-text-stroke-color: var(--text-color);
+}
+
+#abt-home #abt-intro{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font1-circular);
+    font-weight: 100;
+    position: absolute;
+    top: 35%;
+    left: 14%;
+}
+
+#abt-home #abt-intro img{
+    width: 450px;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    z-index: 10;
+}
+
+#abt-home #abt-intro p:nth-child(1){
+    z-index: 12;
+}
+
+#abt-home #abt-intro #date{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 12;
+}
+
+@media (max-width: 768px) {
+    #abt-home{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        position: relative;
+        
+    }
+    
+    #abt-home #headings{
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 15rem; 
+    }
+
+    #abt-home #headings h1{
+        font-size: 12vw;
+    }
+
+    #abt-home #abt-intro{
+        top: 28%;
+        left: 18%;
+    }
+    
+    #abt-home #abt-intro img{
+        width: 230px;
+        margin-top: 4rem;
+    }
+    
+    #abt-home #abt-intro #date{
+        font-size: 1.14rem;
+    }
+    
+}
+
+
+/* code for about-page2 */
+#abt-pg2{
+    min-height: 100vh;
+    word-wrap: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+
+#abt-pg2 #top{
+    position: absolute;
+    top: 13%;
+    left: 14%;
+    font-family: var(--font1-circular);
+}
+
+#abt-pg2 h4{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+}
+
+#abt-pg2 .stroke{
+    -webkit-text-stroke-color: var(--text-color);
+    -webkit-text-stroke-width: 1.5px;
+}
+
+#abt-pg2 .row{
+    display: flex;
+    width: 100%;
+    
+}
+
+#abt-pg2 .row h2{
+    text-transform: uppercase;
+    font-size: 6.3vw;
+    font-family: var(--font2-monument);
+    white-space: nowrap;
+    line-height: 0.9;
+    margin: 0 0.8rem;
+    transform: translateX(-30%);
+}
+
+#abt-pg2 #row4 h2{
+    margin: 0 2rem;
+    /* background-color: red; */
+}
+
+@media (max-width: 768px) {
+
+    #abt-pg2{
+        justify-content: center;
+    }    
+    
+    #abt-pg2 #top{
+        top: 0%;
+        left: 14%;
+    }
+    
+    #abt-pg2 h4{
+        font-size: 1.1rem;
+    }
+
+    #abt-pg2 .stroke{
+        -webkit-text-stroke-width: 1px;
+    }
+
+    #abt-pg2 .row h2{
+        font-size: 10vw;
+        margin-right: 0.5rem;
+    }
+    
+    #abt-pg2 #row4 h2{
+        margin: 0 2rem;
+    }
+    
+    #abt-pg2 #top p{
+        margin-right: 2rem ;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* code for abt-page3 */
+#abt-pg3{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 15rem;
+    background-color: var(--abt-bg-color);
+    font-family: var(--font1-circular);
+}
+
+#abt-pg3 h4{
+    margin-right: 7rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+#abt-pg3 #para{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#abt-pg3 p{
+    /* font-size: 1.1rem; */
+    color: #d6f4f5;
+    font-weight: 100;
+}
+
+
+@media (max-width: 768px) {
+
+    #abt-pg3{
+        min-height: 70vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 1.5rem;
+        /* background-color: red; */
+    }
+
+    #abt-pg3 h4{
+        margin-right: 2rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+/* code for footer section */
+footer{
+    min-height: 20vh;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+footer #foot-cont{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d6f4f5;
+    padding: 2rem 0;
+    color: var(--text-color);
+    font-family: var(--font1-circular);
+}
+
+footer p{
+    font-size: 0.9rem;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: var(--text-color);
+    transition: color 0.4s ease;
+}
+
+footer a:hover{
+    color: #d6f4f5;
+}
+
+@media (max-width: 768px) {
+    footer{
+        padding: 0 1.5rem;
+    }
+    
+    footer #foot-cont{
+        padding: 2rem 0;
+        gap: 3.5rem;
+    }
+    
+    footer a{
+        font-size: 0.9rem;
+    }
+
+}
