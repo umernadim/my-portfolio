@@ -119,10 +119,10 @@ function projectCards() {
       title: "Hope Language Center",
       discp: `Discover my exciting language project by clicking
         <a href="your-projects-page-url">here</a>. Dive into a world of
-        languages and see what I've been working on!`,
+        language and see what I've been working on!`,
       img: "assets/hope-lang.png",
       category: "Website",
-      link: "https://github.com/umernadim/hopeEngLangCenter.git"
+      link: " https://umernadim.github.io/hopeEngLangCenter/"
     },
     {
       sNo: "02",
